@@ -251,7 +251,10 @@ nav ul li a:hover {
   margin-bottom: 50px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
+.room-div .detail:hover{
+  background-color: #d2dae0;
+  
+}
 .room-div:hover{
   transform: translateY(-5px);
   background-color: #f0f0f0;
