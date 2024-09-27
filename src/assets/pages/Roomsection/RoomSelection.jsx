@@ -6,8 +6,9 @@ import floorData from './Floor.json';
 
 const RoomSelection = () => {
   const [selectedRoomType, setSelectedRoomType] = useState(null); // Store the selected room type (e.g., Single Room)
+  const [searchQuery, setSearchQuery] = useState('');
 
-  // Combine all room data into one array
+  // Combine all room data into one object
   const roomData = {
     'Single Room': singleRoomData,
     'Double Room': doubleRoomData,
@@ -24,8 +25,28 @@ const RoomSelection = () => {
     }
   };
 
+  // Filter rooms based on the search query
+  const filteredRooms = selectedRoomType
+    ? roomData[selectedRoomType].filter(room =>
+        room.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        room.phone.includes(searchQuery) ||
+        room.price.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        room.location.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    : [];
+
   return (
     <div>
+      {/* Search bar section */}
+      <section className="search-bar">
+        <input
+          type="text"
+          placeholder="Search by name, phone, price, or location..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+      </section>
+
       {/* Room Selection Section */}
       <section className="room-selection">
         <div className="container-room">
@@ -40,34 +61,32 @@ const RoomSelection = () => {
 
       {/* Room Detail Section */}
       <section className="room-details">
-      <div className="container-room">
-        <div className="container-room detail">
-          {selectedRoomType && (
-            <div className="room-info">
-              <h3>{selectedRoomType}</h3>
-              {roomData[selectedRoomType].map((room, index) => (
-                <div key={index} className="room-details-card">
-                 <div className="room-div">
-                 <div className="room-div detail">
-                  <p><strong>Description:</strong> {room.description}</p>
-                  <p><strong>Price:</strong> {room.price}</p>
-                  <p><strong>Location:</strong> {room.location}</p>
-                  <p><strong>Phone:</strong> {room.phone}</p>
-                  <p><strong>Amenities:</strong></p>
-                  
-                  <ul>
-                  
-                    {room.amenities.map((amenity, i) => (
-                      <li key={i}>{amenity}</li>
-                    ))}
-                  </ul>
+        <div className="container-room">
+          <div className="container-room detail">
+            {selectedRoomType && (
+              <div className="room-info">
+                <h3>{selectedRoomType}</h3>
+                {filteredRooms.map((room, index) => (
+                  <div key={index} className="room-details-card">
+                    <div className="room-div">
+                      <div className="room-div detail">
+                        <p><strong>Description:</strong> {room.description}</p>
+                        <p><strong>Price:</strong> {room.price}</p>
+                        <p><strong>Location:</strong> {room.location}</p>
+                        <p><strong>Phone:</strong> {room.phone}</p>
+                        <p><strong>Amenities:</strong></p>
+                        <ul>
+                          {room.amenities.map((amenity, i) => (
+                            <li key={i}>{amenity}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
                   </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
       </section>
     </div>
