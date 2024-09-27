@@ -266,6 +266,27 @@ nav ul li a:hover {
     font-size: 1.2rem; 
   }
 }
+/*style home*/
+.AddesContainer {
+  width: 100%;
+  margin: auto;
+}
+
+.Add-Slider {
+  padding: 20px;
+}
+
+.slider-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-image {
+  width: 100%;
+  height: auto; 
+  border-radius: 10px; 
+}
 
 /* Footer CSS */
 

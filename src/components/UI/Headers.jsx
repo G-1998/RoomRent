@@ -6,8 +6,8 @@ const Headers = () => {
       <div className="container">
         <div className="Grid navbar-grid">
           <div className="Logo">          
-            <img src="public/Image/logo.png" alt="Logo AI"></img>
-             <h2>AI ROBOTICS CLUB<h1>SPU MANDI</h1></h2>                              
+            <img src="public/Image/logo.jpg" alt="Logo AI"></img>
+             <h2>Easy <h1>Room Finder</h1></h2>                              
           </div>
           
           <nav>
