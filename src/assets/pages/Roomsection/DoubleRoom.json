@@ -1,0 +1,24 @@
+[{
+    "name": "Double Room",
+    "description": "Perfect for couples with a queen-size bed.",
+    "price": "$150/night",
+    "location": "Near Airport",
+    "phone": "098-765-4321",
+    "amenities": ["Wi-Fi", "Balcony", "Mini Bar"]
+  },
+  {
+    "name": "Double Room",
+    "description": "Perfect for couples with a queen-size bed.",
+    "price": "$150/night",
+    "location": "Sauli-Khad",
+    "phone": "098-765-4321",
+    "amenities": ["Wi-Fi", "Balcony", "Mini Bar"]
+  },
+  {
+    "name": "Double Room",
+    "description": "Perfect for couples with  bed.",
+    "price": "Rs.3500/Per-Month",
+    "location": "Tarna-Temple",
+    "phone": "0123456789",
+    "amenities": ["Wi-Fi", "Balcony", "Tv"]
+  }]

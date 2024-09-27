@@ -1,30 +1,16 @@
-[
-  {
-    "owner": "John Doe",
-    "roomType": "Double Room",
-    "location": "New York",
-    "contact": "123-456-7890",
-    "description": "A cozy room for one person with a Double bed, wardrobe, and desk."
+[{
+    "name": "Floor",
+    "description": "Spacious floor space for larger gatherings or events.",
+    "price": "$500/night",
+    "location": "Top Floor",
+    "phone": "789-123-4560",
+    "amenities": ["Wi-Fi", "Conference Facilities", "Catering Available"]
   },
   {
-    "owner": "Jane Smith",
-    "roomType": "Double Room",
-    "location": "Los Angeles",
-    "contact": "987-654-3210",
-    "description": "A spacious room for two people with two beds, a shared wardrobe, and seating area."
-  },
-  {
-    "owner": "Alice Johnson",
-    "roomType": "Double Room",
-    "location": "Chicago",
-    "contact": "555-123-4567",
-    "description": "Ideal for groups or families, this room comes with three beds and ample space."
-  },
-  {
-    "owner": "Robert Brown",
-    "roomType": "Double Room",
-    "location": "San Francisco",
-    "contact": "111-222-3333",
-    "description": "Information about the available floors and their features."
-  }
-]
+    "name": "Floor",
+    "description": "Perfect for couples with  bed.",
+    "price": "Rs.3500/Per-Month",
+    "location": "Tarna-Temple",
+    "phone": "0123456789",
+    "amenities": ["Wi-Fi", "Balcony", "Tv","Attached Bathroom","etc"]
+  }]

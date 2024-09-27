@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Single Room",
+        "description": "A cozy single room ideal for solo travelers.",
+        "price": "$100/night",
+        "location": "City Center",
+        "phone": "123-456-7890",
+        "amenities": ["Wi-Fi", "Air Conditioning", "Flat-screen TV"]
+      },{
+        "name": "Single Room",
+        "description": "A cozy single room ideal for solo travelers.",
+        "price": "Rs.2000/Per-Month",
+        "location": "Seri Bazar",
+        "phone": "123-456-7890",
+        "amenities": ["Wi-Fi", "Air Conditioning", "Flat-screen TV"]
+      },
+      {
+        "name": "Single Room",
+        "description": "A cozy single room ideal for student.",
+        "price": "Rs.2000/Per-Month",
+        "location": "Purani Mandi",
+        "phone": "123-456-7890",
+        "amenities": ["Wi-Fi", "Study Table"]
+      },
+      {
+        "name": "Single Room",
+        "description": "A cozy single room ideal for worker.",
+        "price": "Rs.2500/Per-Month",
+        "location": "Seri Bazar",
+        "phone": "123-456-7890",
+        "amenities": ["Wi-Fi", "Attached Bathroom", "TV"]
+      }
+]

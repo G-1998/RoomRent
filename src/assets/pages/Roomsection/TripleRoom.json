@@ -1,0 +1,26 @@
+[
+{
+    "name": "Triple Room",
+    "description": "Ideal for families or groups, with three single beds.",
+    "price": "$200/night",
+    "location": "Downtown",
+    "phone": "456-789-1234",
+    "amenities": ["Wi-Fi", "Air Conditioning", "Private Bathroom"]
+  },
+  {
+    "name": "Triple Room",
+    "description": "Ideal for families or groups, with three single beds.",
+    "price": "$200/night",
+    "location": "Downtown",
+    "phone": "456-789-1234",
+    "amenities": ["Wi-Fi", "Air Conditioning", "Private Bathroom"]
+  },
+  {
+    "name": "Triple Room",
+    "description": "Perfect for couples with  bed.",
+    "price": "Rs.4500/Per-Month",
+    "location": "Tarna-Temple",
+    "phone": "0123456789",
+    "amenities": ["Wi-Fi", "Balcony", "Tv"]
+  }
+]
