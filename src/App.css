@@ -267,25 +267,97 @@ nav ul li a:hover {
   }
 }
 /*style home*/
-.AddesContainer {
+
+/* Video Section */
+section video {
+  display: block;
   width: 100%;
-  margin: auto;
+  height: auto;
 }
 
-.Add-Slider {
-  padding: 20px;
+/* Advertisement/Slider Container */
+/* Video Styles */
+
+video {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
 }
 
-.slider-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Styles for the slider container */
+.slider-container {
+  max-width: 1200px; /* Maximum width of the slider */
+  margin: 20px auto; /* Center the slider */
+ 
+  padding: 20px; /* Space around the slider */
+  background-color: rgb(160, 164, 165); /* Background color for the slider */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+/* Styles for the slider images */
 .slider-image {
-  width: 100%;
-  height: auto; 
-  border-radius: 10px; 
+  width: 100%; /* Responsive image */
+  height: 500px; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease; /* Smooth scale effect on hover */
+}
+.slider-container img {
+  width: 100%; /* Responsive image */
+  height: 500px; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease; /* Smooth scale effect on hover */
+}
+
+/* Add a scale effect on hover */
+.slider-image:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  font-size: 24px;
+  background-color: #100d0d;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: #1abc9c;
+}
+
+/* Styles for the slider dots */
+.slick-dots {
+  bottom: -30px; /* Position the dots below the slider */
+}
+
+.slick-dots li button:before {
+  color: #100d0d; /* Color for inactive dots */
+  font-size: 12px; /* Size of the dots */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #007bff; /* Color for active dot */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .slider-container {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  video {
+    height: 300px; /* Adjust video height on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-container {
+    padding: 5px; /* Further reduce padding on extra small screens */
+  }
+
+  video {
+    height: 250px; /* Further adjust video height */
+  }
 }
 
 /* Footer CSS */

@@ -1,4 +1,6 @@
 import React from "react";
+import Logo from "./logo.jpg";
+
 import { NavLink } from "react-router-dom";
 const Headers = () => {
   return (
@@ -6,7 +8,7 @@ const Headers = () => {
       <div className="container">
         <div className="Grid navbar-grid">
           <div className="Logo">          
-            <img src="public/Image/logo.jpg" alt="Logo AI"></img>
+            <img src={Logo} alt="Logo AI"></img>
              <h2>Easy <h1>Room Finder</h1></h2>                              
           </div>
           

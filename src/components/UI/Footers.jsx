@@ -1,5 +1,6 @@
 import React from "react";
 import { Router } from "react-router-dom";
+import Logo from "./AI.png";
 const Footers = () => {
   return (
     <>
@@ -10,7 +11,7 @@ const Footers = () => {
       <div className="container">
         <div className="Grid navbar-grid">
           <div className="Logo">          
-            <img src="public/Image/AI.png" alt="Logo AI"></img>
+            <img src={Logo} alt="Logo AI"></img>
             <h2>AI ROBOTICS CLUB<h1>SPU MANDI</h1></h2>  
         </div>
         </div>
