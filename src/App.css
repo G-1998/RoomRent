@@ -115,33 +115,48 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #007bff;
+  transform: translateY(-2px);
+  background-color: hsl(0, 0%, 80%);
+  border-radius: 10px;  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 .ham-menu {
   display: none; /
 }
 
 @media (max-width: 768px),(max-width:524px){
- header{
-  width: auto;
-  height: 20rem;
+header{
+  width: 100%;  
   display: flex;
-  
+  height: fit-content;
+
  }
+ .container{
+  
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: fit-content;
+ }
+ 
 .navbar-grid {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+   width: 100%;   
+    height: fit-content;
     
   }
   .Logo {
+    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
   }
-.Logo h1{
-  display: flex;
+.Logo h1,.Logo h2{
+  display: block;
   justify-content: center;
+  align-items: center;
 }
   .Logo img {
     margin-right: 0;
@@ -153,11 +168,14 @@ nav ul li a:hover {
   }
 .grid{
   width:100%;
+  height:auto;
+  flex-direction: column;
+  
 }
   nav ul {
     flex-direction: column;
     gap: 10px;
-   
+   display: grid;
   }
   .Logo h1 {
     font-size: 20px;
@@ -165,10 +183,19 @@ nav ul li a:hover {
   .ham-menu {
     display: block; 
   }
-
-  nav ul {
-    display: none; 
+  ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+ul li:hover{
+  transform: translateY(-2px);
+  background-color: hsl(0, 0%, 80%);
+  border-radius: 10px;  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+  
 }
 /*body style start here css*/
 
