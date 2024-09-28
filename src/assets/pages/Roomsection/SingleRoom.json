@@ -1,6 +1,7 @@
 [
     {
         "name": "Single Room",
+        "Landloardname": "Ram Kashyap",
         "description": "A cozy single room ideal for solo travelers.",
         "price": "$100/night",
         "location": "City Center",
@@ -8,6 +9,7 @@
         "amenities": ["Wi-Fi", "Air Conditioning", "Flat-screen TV"]
       },{
         "name": "Single Room",
+        "Landloardname": "Surya",
         "description": "A cozy single room ideal for solo travelers.",
         "price": "Rs.2000/Per-Month",
         "location": "Seri Bazar",
@@ -16,6 +18,7 @@
       },
       {
         "name": "Single Room",
+        "Landloardname": "Sita Devi",
         "description": "A cozy single room ideal for student.",
         "price": "Rs.2000/Per-Month",
         "location": "Purani Mandi",
@@ -24,6 +27,7 @@
       },
       {
         "name": "Single Room",
+        "Landloardname": "Rajesh Kumar",
         "description": "A cozy single room ideal for worker.",
         "price": "Rs.2500/Per-Month",
         "location": "Seri Bazar",

@@ -1,15 +1,17 @@
 [{
     "name": "Floor",
+    "Landloardname": "Nikhil Bhardwaj",
     "description": "Spacious floor space for larger gatherings or events.",
-    "price": "$500/night",
-    "location": "Top Floor",
+    "price": "Rs.8000/Per-Month",
+    "location": "Thanera Mohalla",
     "phone": "789-123-4560",
     "amenities": ["Wi-Fi", "Conference Facilities", "Catering Available"]
   },
   {
     "name": "Floor",
+    "Landloardname": "Mukesh Rawat",
     "description": "Perfect for couples with  bed.",
-    "price": "Rs.3500/Per-Month",
+    "price": "Rs.8500/Per-Month",
     "location": "Tarna-Temple",
     "phone": "0123456789",
     "amenities": ["Wi-Fi", "Balcony", "Tv","Attached Bathroom","etc"]

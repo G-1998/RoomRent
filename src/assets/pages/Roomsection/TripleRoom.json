@@ -1,22 +1,25 @@
 [
 {
     "name": "Triple Room",
+    "Landloardname": "Minakashi Sharma",
     "description": "Ideal for families or groups, with three single beds.",
-    "price": "$200/night",
+    "price": "Rs.5500/Per-Month",
     "location": "Downtown",
     "phone": "456-789-1234",
     "amenities": ["Wi-Fi", "Air Conditioning", "Private Bathroom"]
   },
   {
     "name": "Triple Room",
+    "Landloardname": "Mohit Negi",
     "description": "Ideal for families or groups, with three single beds.",
-    "price": "$200/night",
+    "price": "Rs.4500/Per-Month",
     "location": "Downtown",
     "phone": "456-789-1234",
     "amenities": ["Wi-Fi", "Air Conditioning", "Private Bathroom"]
   },
   {
     "name": "Triple Room",
+    "Landloardname": "Sumit Mahajan",
     "description": "Perfect for couples with  bed.",
     "price": "Rs.4500/Per-Month",
     "location": "Tarna-Temple",

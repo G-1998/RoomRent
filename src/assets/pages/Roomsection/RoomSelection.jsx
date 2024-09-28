@@ -28,6 +28,7 @@ const RoomSelection = () => {
   // Filter rooms based on the search query
   const filteredRooms = selectedRoomType
     ? roomData[selectedRoomType].filter(room =>
+      room.Landloardname.toLowerCase().includes(searchQuery.toLowerCase()) ||
         room.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         room.phone.includes(searchQuery) ||
         room.price.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -70,6 +71,7 @@ const RoomSelection = () => {
                   <div key={index} className="room-details-card">
                     <div className="room-div">
                       <div className="room-div detail">
+                      <p><strong>LandLord Name:</strong> {room.Landloardname}</p>
                         <p><strong>Description:</strong> {room.description}</p>
                         <p><strong>Price:</strong> {room.price}</p>
                         <p><strong>Location:</strong> {room.location}</p>
@@ -88,8 +90,9 @@ const RoomSelection = () => {
             )}
           </div>
         </div>
+        
       </section>
-    </div>
+   </div>
   );
 };
 
