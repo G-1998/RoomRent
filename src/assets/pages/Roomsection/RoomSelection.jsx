@@ -38,7 +38,7 @@ const RoomSelection = () => {
 
   return (
     <div>
-      {/* Search bar section */}
+      
       <section className="search-bar">
         <input
           type="text"

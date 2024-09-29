@@ -3,8 +3,8 @@
         "name": "Single Room",
         "Landloardname": "Ram Kashyap",
         "description": "A cozy single room ideal for solo travelers.",
-        "price": "$100/night",
-        "location": "City Center",
+        "price": "Rs.2500/Per-Month",
+        "location": "Purani Mandi",
         "phone": "123-456-7890",
         "amenities": ["Wi-Fi", "Air Conditioning", "Flat-screen TV"]
       },{

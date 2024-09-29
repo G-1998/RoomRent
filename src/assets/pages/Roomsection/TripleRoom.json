@@ -4,7 +4,7 @@
     "Landloardname": "Minakashi Sharma",
     "description": "Ideal for families or groups, with three single beds.",
     "price": "Rs.5500/Per-Month",
-    "location": "Downtown",
+    "location": "Samkhetar Mohalla",
     "phone": "456-789-1234",
     "amenities": ["Wi-Fi", "Air Conditioning", "Private Bathroom"]
   },
@@ -13,7 +13,7 @@
     "Landloardname": "Mohit Negi",
     "description": "Ideal for families or groups, with three single beds.",
     "price": "Rs.4500/Per-Month",
-    "location": "Downtown",
+    "location": "Paddal",
     "phone": "456-789-1234",
     "amenities": ["Wi-Fi", "Air Conditioning", "Private Bathroom"]
   },

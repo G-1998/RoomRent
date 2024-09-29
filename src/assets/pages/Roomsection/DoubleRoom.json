@@ -2,7 +2,7 @@
     "name": "Double Room",
     "Landloardname": "Ram Sharma",
     "description": "Perfect for couples with a queen-size bed.",
-    "price": "Rs. 3500/Per Month",
+    "price": "Rs.2000/Per-Month",
     "location": "Purani Mandi",
     "phone": "098-765-4321",
     "amenities": ["Wi-Fi", "Balcony", "Mini Bar"]
@@ -11,14 +11,14 @@
     "name": "Double Room",
     "Landloardname": "Sohan Kumar",
     "description": "Perfect for couples with a queen-size bed.",
-    "price": "Rs. 3000/Per Month",
+    "price": "Rs. 3000/Per-Month",
     "location": "Sauli-Khad",
     "phone": "098-765-4321",
     "amenities": ["Wi-Fi", "Balcony", "Mini Bar"]
   },
   {
     "name": "Double Room",
-    "Landloardname": "Mohan Sharma",
+    "Landloardname": "Mohan Kumar",
     "description": "Perfect for couples with  bed.",
     "price": "Rs.3500/Per-Month",
     "location": "Tarna-Temple",
