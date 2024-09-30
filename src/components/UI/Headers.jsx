@@ -9,6 +9,13 @@ const Headers = () => {
     setMenuOpen(!menuOpen);
   };
 
+  // Close the menu when a link is clicked (for mobile view)
+  const closeMenu = () => {
+    if (menuOpen) {
+      setMenuOpen(false);
+    }
+  };
+
   return (
     <header>
       <div className="container">
@@ -33,22 +40,22 @@ const Headers = () => {
           <nav className={menuOpen ? "nav-menu active" : "nav-menu"}>
             <ul className="nav-links">
               <li>
-                <NavLink exact to="/" activeClassName="active">
+                <NavLink exact to="/" activeClassName="active" onClick={closeMenu}>
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/RoomSelection" activeClassName="active">
+                <NavLink to="/RoomSelection" activeClassName="active" onClick={closeMenu}>
                   Rooms Section
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/About" activeClassName="active">
+                <NavLink to="/About" activeClassName="active" onClick={closeMenu}>
                   About
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Login" activeClassName="active">
+                <NavLink to="/Login" activeClassName="active" onClick={closeMenu}>
                   Login
                 </NavLink>
               </li>
