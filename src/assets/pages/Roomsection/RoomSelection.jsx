@@ -5,10 +5,9 @@ import tripleRoomData from './TripleRoom.json';
 import floorData from './Floor.json';
 
 const RoomSelection = () => {
-  const [selectedRoomType, setSelectedRoomType] = useState(null); // Store the selected room type (e.g., Single Room)
+  const [selectedRoomType, setSelectedRoomType] = useState(null); 
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Combine all room data into one object
   const roomData = {
     'Single Room': singleRoomData,
     'Double Room': doubleRoomData,
@@ -17,7 +16,6 @@ const RoomSelection = () => {
   };
 
   const handleRoomClick = (roomType) => {
-    // Toggle room display: if the same room is clicked, hide it
     if (selectedRoomType === roomType) {
       setSelectedRoomType(null);
     } else {
@@ -25,10 +23,9 @@ const RoomSelection = () => {
     }
   };
 
-  // Filter rooms based on the search query
   const filteredRooms = selectedRoomType
     ? roomData[selectedRoomType].filter(room =>
-      room.Landloardname.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        room.Landloardname.toLowerCase().includes(searchQuery.toLowerCase()) ||
         room.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         room.phone.includes(searchQuery) ||
         room.price.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -38,7 +35,6 @@ const RoomSelection = () => {
 
   return (
     <div>
-      
       <section className="search-bar">
         <input
           type="text"
@@ -51,7 +47,6 @@ const RoomSelection = () => {
       {/* Room Selection Section */}
       <section className="room-selection">
         <div className="container-room">
-          {/* Main Div for each room type */}
           {Object.keys(roomData).map((roomType) => (
             <div key={roomType} className="room" onClick={() => handleRoomClick(roomType)}>
               <h2>{roomType}</h2>
@@ -60,37 +55,34 @@ const RoomSelection = () => {
         </div>
       </section>
 
-      {/* Room Detail Section */}
+      {/* Room Details Section (Cards with Flexbox) */}
       <section className="room-details">
-        <div className="container-room">
-          <div className="container-room detail">
-            {selectedRoomType && (
-              <div className="room-info">
-                <h3>{selectedRoomType}</h3>
+        <div className="room-details-container">
+          {selectedRoomType && (
+            <div className="room-info">
+              <h2>{selectedRoomType}</h2>
+              <div className="room-cards">
                 {filteredRooms.map((room, index) => (
-                  <div key={index} className="room-details-card">
-                    <div className="room-div">
-                      <div className="room-div detail">
+                  <div key={index} className="room-card">
+                    <div className="room-card-content">
                       <p><strong>LandLord Name:</strong> {room.Landloardname}</p>
-                        <p><strong>Description:</strong> {room.description}</p>
-                        <p><strong>Price:</strong> {room.price}</p>
-                        <p><strong>Location:</strong> {room.location}</p>
-                        <p><strong>Phone:</strong> {room.phone}</p>
-                        <p><strong>Amenities:</strong></p>
-                        <ul>
-                          {room.amenities.map((amenity, i) => (
-                            <li key={i}>{amenity}</li>
-                          ))}
-                        </ul>
-                      </div>
+                      <p><strong>Description:</strong> {room.description}</p>
+                      <p><strong>Price:</strong> {room.price}</p>
+                      <p><strong>Location:</strong> {room.location}</p>
+                      <p><strong>Phone:</strong> {room.phone}</p>
+                      <p><strong>Amenities:</strong></p>
+                      <ul>
+                        {room.amenities?.map((amenity, i) => (
+                          <li key={i}>{amenity}</li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
                 ))}
               </div>
-            )}
-          </div>
+            </div>
+          )}
         </div>
-        
       </section>
    </div>
   );
