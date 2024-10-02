@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import Logo from "./logo.jpg";
 import { NavLink } from "react-router-dom";
+import home from "./home.png";
+import room from "./room.png";
+import about from "./about.png";
+import login from "./login.png";
 
 const Headers = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -41,21 +45,25 @@ const Headers = () => {
             <ul className="nav-links">
               <li>
                 <NavLink exact to="/" activeClassName="active" onClick={closeMenu}>
+                  <img src={home} alt="Home" className="nav-icon" />
                   Home
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/RoomSelection" activeClassName="active" onClick={closeMenu}>
-                  Rooms Section
+                  <img src={room} alt="Rooms Section" className="nav-icon" />
+                  Rooms
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/About" activeClassName="active" onClick={closeMenu}>
+                  <img src={about} alt="About" className="nav-icon" />
                   About
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/Login" activeClassName="active" onClick={closeMenu}>
+                  <img src={login} alt="Login" className="nav-icon" />
                   Login
                 </NavLink>
               </li>
