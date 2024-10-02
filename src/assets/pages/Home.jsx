@@ -67,50 +67,39 @@ const Home = () => {
       </section>
 
 
-      <section ref={sectionRef} className={`containersection2 background-container ${sectionInView ? 'slide-in' : ''}`}>
-  <div className="parent1">
-    <div className="available-container">  
-    <div className="room-info">    
-        <h1><u>Room Available In</u></h1>
-        </div>
-        <div className='child1'>  
-        <div className="room-card1">
-          <div className="room-card1-content">
-            <img src={city} alt="Mandi" />
-            <div className="overlay-content transbox1">
-              <h1 className="overlay-message animated-text">Mandi</h1>
-            </div>
-          </div>        
+      <section ref={sectionRef} className={`container ${sectionInView ? 'slide-in' : ''}`}>
+  <div className="grid-container3">
+  <h1 className="section-title">Room Available In</h1>
+    <div className="section">
+      
+      <div className="card1">
+        <img src={city} alt="Mandi" className="card-image" />
+        <div className="overlay1">
+          <h1 className="overlay-text">Mandi</h1>
         </div>
       </div>
     </div>
-    <div className="upcoming-container">
-    <div className="room-info">      
-      <h1><u> Upcoming Event In</u></h1>
-      </div>
-        <div className='child1'>     
-        <div className="room-card1">
-          <div className="room-card1-content">
-            <img src={city1} alt="Sundernagar" />
-            <div className="overlay-content transbox1">
-              <h1 className="overlay-message animated-text">Sundernagar</h1>
-            </div>
+    <h1 className="section-title">Upcoming Event In</h1>
+    <div className="section">
+     
+      <div className="card-grid1">
+        <div className="card1">
+          <img src={city1} alt="Sundernagar" className="card-image" />
+          <div className="overlay1">
+            <h1 className="overlay-text">Sundernagar</h1>
           </div>
         </div>
-
-        <div className="room-card1">
-          <div className="room-card1-content">
-            <img src={city2} alt="IIT Kamand" />
-            <div className="overlay-content transbox1">
-              <h1 className="overlay-message animated-text">IIT Kamand</h1>
-            </div>
-           
+        <div className="card1">
+          <img src={city2} alt="IIT Kamand" className="card-image" />
+          <div className="overlay1">
+            <h1 className="overlay-text">IIT Kamand</h1>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
 
