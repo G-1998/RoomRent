@@ -4,8 +4,7 @@ import AppLayout from "./components/Layout/AppLayout";
 import Home from "./assets/pages/Home";
 import About from "./assets/pages/About";
 import RoomSelection from "./assets/pages/Roomsection/RoomSelection";
-
-
+import Login from "./assets/pages/login";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,14 +15,17 @@ const router = createBrowserRouter([
         element: <Home />, 
       },
       {
-       path: "RoomSelection",
-      element: <RoomSelection />, 
-    },
+        path: "RoomSelection",
+        element: <RoomSelection />, 
+      },
       {
         path: "about", 
         element: <About />,
       },
-      
+      {
+        path: "login", 
+        element: <Login />, // Use the correct PascalCase component name
+      },
     ],
   },
 ]);
