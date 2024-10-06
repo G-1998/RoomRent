@@ -5,6 +5,7 @@ import home from "./home.png";
 import room from "./room.png";
 import about from "./about.png";
 import login from "./login.png";
+import FeedbackForm from "../../assets/pages/Feedback";
 
 const Headers = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -61,6 +62,12 @@ const Headers = () => {
                   About
                 </NavLink>
               </li>
+              <li>
+              <NavLink to="/FeedbackForm" activeClassName="active" onClick={closeMenu}>
+                  <img src={about} alt="About" className="nav-icon" />
+                  Feedback
+                </NavLink>
+                </li>
               <li>
                 <NavLink to="/Login" activeClassName="active" onClick={closeMenu}>
                   <img src={login} alt="Login" className="nav-icon" />

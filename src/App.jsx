@@ -5,6 +5,9 @@ import Home from "./assets/pages/Home";
 import About from "./assets/pages/About";
 import RoomSelection from "./assets/pages/Roomsection/RoomSelection";
 import Login from "./assets/pages/login";
+import FeedbackForm from "./assets/pages/Feedback";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "about", 
         element: <About />,
+      },
+      {
+       path:"FeedbackForm",
+       element:< FeedbackForm/>
       },
       {
         path: "login", 

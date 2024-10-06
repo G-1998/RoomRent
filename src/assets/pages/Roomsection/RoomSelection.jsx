@@ -1,12 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import './Roomsection.css';
+import Slider from "react-slick"; // Import the Slider
 import singleRoomData from './SingleRoom.json';
 import doubleRoomData from './DoubleRoom.json';
 import tripleRoomData from './TripleRoom.json';
 import floorData from './Floor.json';
 
 const RoomSelection = () => {
-  const [selectedRoomType, setSelectedRoomType] = useState(null); 
+  const [selectedRoomType, setSelectedRoomType] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
+  const sliderRef = useRef(null); // Create a ref for the slider
 
   const roomData = {
     'Single Room': singleRoomData,
@@ -16,11 +19,7 @@ const RoomSelection = () => {
   };
 
   const handleRoomClick = (roomType) => {
-    if (selectedRoomType === roomType) {
-      setSelectedRoomType(null);
-    } else {
-      setSelectedRoomType(roomType);
-    }
+    setSelectedRoomType((prev) => (prev === roomType ? null : roomType));
   };
 
   const filteredRooms = selectedRoomType
@@ -33,14 +32,16 @@ const RoomSelection = () => {
       )
     : [];
 
+  
   return (
-    <div>
+    <div className='background-about'>
       <section className="search-bar">
         <input
           type="text"
           placeholder="Search by name, phone, price, or location..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
+          aria-label="Search for rooms"
         />
       </section>
 
@@ -48,43 +49,48 @@ const RoomSelection = () => {
       <section className="room-selection">
         <div className="container-room">
           {Object.keys(roomData).map((roomType) => (
-            <div key={roomType} className="room" onClick={() => handleRoomClick(roomType)}>
+            <div 
+              key={roomType} 
+              className={`room ${selectedRoomType === roomType ? 'active' : ''}`} 
+              onClick={() => handleRoomClick(roomType)}
+              role="button"
+              aria-pressed={selectedRoomType === roomType}
+            >
               <h2>{roomType}</h2>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Room Details Section (Cards with Flexbox) */}
-      <section className="room-details">
-        <div className="room-details-container">
-          {selectedRoomType && (
-            <div className="room-info">
-              <h2>{selectedRoomType}</h2>
-              <div className="room-cards">
+     
+      <section className="room-details">  
+      <div className='headingroomtype'>     
+              <h2>{selectedRoomType}</h2> 
+              </div>    
+        <div className="room-details-container">         
+          {selectedRoomType && (             
+            <div className="room-info">                
                 {filteredRooms.map((room, index) => (
                   <div key={index} className="room-card">
                     <div className="room-card-content">
-                      <p><strong>LandLord Name:</strong> {room.Landloardname}</p>
+                      <p><strong>Landlord Name:</strong> {room.Landloardname}</p>
                       <p><strong>Description:</strong> {room.description}</p>
                       <p><strong>Price:</strong> {room.price}</p>
-                      <p><strong>Location:</strong> {room.location}</p>
-                      <p><strong>Phone:</strong> {room.phone}</p>
-                      <p><strong>Amenities:</strong></p>
-                      <ul>
-                        {room.amenities?.map((amenity, i) => (
-                          <li key={i}>{amenity}</li>
-                        ))}
-                      </ul>
+                      <div className="more-details">
+                        <a href="#">More Details..</a>
+                      </div>
                     </div>
                   </div>
                 ))}
-              </div>
+              
+
+             
+             
             </div>
           )}
         </div>
       </section>
-   </div>
+    </div>
   );
 };
 
