@@ -63,7 +63,7 @@ a:hover {
 }
 
 header {
-  background: linear-gradient(to right, hsl(0, 75%, 60%), hsl(123, 61%, 69%));
+  background: #333;
   padding: 20px 0;
 }
 
@@ -94,11 +94,13 @@ header {
 
 .logo-text h1 {
   font-size: 24px;
+  color:white;
 }
 
 .logo-text h2 {
   font-size: 16px;
   margin: 0;
+  color:white;
 }
 
 .container {
@@ -307,6 +309,83 @@ video {
 .slick-dots li.slick-active button:before {
   color: #007bff; /* Color for active dot */
 }
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .slider-image {
+    height: 400px; /* Reduce height for medium screens */
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+
+  .slick-prev {
+    left: -40px;
+  }
+
+  .slick-next {
+    right: -40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-image {
+    height: 300px; /* Further reduce height for tablets */
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+
+  .slick-prev {
+    left: -30px;
+  }
+
+  .slick-next {
+    right: -30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-image {
+    height: 250px; /* Reduce image height for small screens */
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+  }
+
+  .slick-prev {
+    left: -25px;
+  }
+
+  .slick-next {
+    right: -25px;
+  }
+
+  .slick-dots {
+    bottom: -20px; /* Move dots closer on smaller screens */
+  }
+
+  .slick-dots li button:before {
+    font-size: 10px; /* Smaller dots on mobile */
+  }
+}
+
+
+
+
 /* Background section styles */
 .background-container {
   position: relative;
