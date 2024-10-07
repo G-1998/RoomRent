@@ -46,31 +46,31 @@ const Headers = () => {
             <ul className="nav-links">
               <li>
                 <NavLink exact to="/" activeClassName="active" onClick={closeMenu}>
-                  <img src={home} alt="Home" className="nav-icon" />
+                <i class="fa-solid fa-house"></i>
                   Home
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/RoomSelection" activeClassName="active" onClick={closeMenu}>
-                  <img src={room} alt="Rooms Section" className="nav-icon" />
+                <i class="fa-solid fa-person-booth"></i>
                   Rooms
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/About" activeClassName="active" onClick={closeMenu}>
-                  <img src={about} alt="About" className="nav-icon" />
+                <i class="fa-regular fa-address-card"></i>
                   About
                 </NavLink>
               </li>
               <li>
               <NavLink to="/FeedbackForm" activeClassName="active" onClick={closeMenu}>
-                  <img src={about} alt="About" className="nav-icon" />
+              <i class="fa-solid fa-message"></i>
                   Feedback
                 </NavLink>
                 </li>
               <li>
                 <NavLink to="/Login" activeClassName="active" onClick={closeMenu}>
-                  <img src={login} alt="Login" className="nav-icon" />
+                <i class="fa-solid fa-right-to-bracket"></i>
                   Login
                 </NavLink>
               </li>

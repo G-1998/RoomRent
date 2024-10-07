@@ -67,47 +67,6 @@ const Home = () => {
       </section>
 
 
-      <section ref={sectionRef} className={`container ${sectionInView ? 'slide-in' : ''}`}>
-  <div className="grid-container3">
-  <h1 className="section-title">Room Available In</h1>
-    <div className="section">
-      
-      <div className="card1">
-        <img src={city} alt="Mandi" className="card-image" />
-        <div className="overlay1">
-          <h1 className="overlay-text">Mandi</h1>
-        </div>
-      </div>
-    </div>
-    <h1 className="section-title">Upcoming Event In</h1>
-    <div className="section">
-     
-      <div className="card-grid1">
-        <div className="card1">
-          <img src={city1} alt="Sundernagar" className="card-image" />
-          <div className="overlay1">
-            <h1 className="overlay-text">Sundernagar</h1>
-          </div>
-        </div>
-        <div className="card1">
-          <img src={city2} alt="IIT Kamand" className="card-image" />
-          <div className="overlay1">
-            <h1 className="overlay-text">IIT Kamand</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-    
-
       {/* Additional Section */}
       <section ref={sectionRef} className={`containersection1 ${sectionInView ? 'slide-in' : ''}`}>
         <div className="main1">
@@ -130,9 +89,11 @@ const Home = () => {
         </div>
       </section>
         {/* Slider Section */}
-        <div className='heading'><h1>Our Sponsership</h1></div>
+      
         <section className={`slider-container ${sliderInView ? 'slide-in' : ''}`}>
+        <h1 className='heading'>Our Sponsership</h1>
         <Slider {...settings}>
+       
           <div>
             <img src={image1} alt="Image 1" />
           </div>

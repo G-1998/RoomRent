@@ -17,7 +17,7 @@ html {
 
 body {
   
-  background-color: #d6d5d5;
+  background-color: #f5f5dc
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,7 +63,7 @@ a:hover {
 }
 
 header {
-  background: #333;
+  background-color: #041a34;
   padding: 20px 0;
 }
 
@@ -250,18 +250,13 @@ section video {
 
 /* Video Styles */
 
-video {
-  width: 100%;
-  height: 480px;
-  object-fit: cover;
-}
 
 /* Styles for the slider container */
 .slider-container {
   max-width: 1200px; 
   margin: 20px auto;  
   padding: 20px; 
-  background-color: rgb(160, 164, 165); 
+ 
   border-radius: 10px; 
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
 }
@@ -269,13 +264,13 @@ video {
 /* Styles for the slider images */
 .slider-image {
   width: 100%; /* Responsive image */
-  height: 500px; /* Maintain aspect ratio */
+  height: 400px; /* Maintain aspect ratio */
   border-radius: 10px; /* Rounded corners */
   transition: transform 0.3s ease; /* Smooth scale effect on hover */
 }
 .slider-container img {
   width: 100%; /* Responsive image */
-  height: 500px; /* Maintain aspect ratio */
+  height: 400px; /* Maintain aspect ratio */
   border-radius: 10px; /* Rounded corners */
   transition: transform 0.3s ease; /* Smooth scale effect on hover */
 }
@@ -699,13 +694,13 @@ video {
 
 
 .containersection1 {
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 50px 20px;
   max-width: 1200px;
-  margin: 0 auto;
-  background-color: #8d089b;;
+  margin: 10px auto; 
   gap: 30px;
   border-radius: 10px;
   
@@ -713,6 +708,7 @@ video {
 }
 
 .main1, .main2 {
+  
   flex: 1;
   align-items: center;
   justify-content: space-between;
@@ -720,8 +716,9 @@ video {
 }
 
 .text h1 {
+  
   font-size: 2.5rem;
-  color:white;
+  color:rgb(19, 5, 5);
   text-align: left;
   margin-bottom: 20px;
   text-transform: capitalize;
@@ -731,7 +728,7 @@ video {
 .text {
   font-size: 1.8rem;
   line-height: 1.8; 
-  color:white;
+  color:rgb(17, 7, 7);
 }
 
 .main2-image img {
@@ -1053,8 +1050,16 @@ video {
 }
 .heading{
   width:100%;
+  background-color:navy;
   display: flex;
   justify-content: center;
+  color:rgb(247, 243, 243);
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 50px;
+  margin-bottom: 10px;
   
 }
 
@@ -1062,7 +1067,7 @@ video {
 /* Footer CSS */
 
 footer {
-  background-color: #b2d2f0;  
+  background-color: #121518; 
   padding: 10px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px 0;
@@ -1080,6 +1085,7 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px 0;
+  
   border-bottom: 1px solid #444;
 }
 
@@ -1089,6 +1095,7 @@ footer {
 .footer-section p {
   font-size: 16px;
   line-height: 1.6;
+  color:white;
 }
 
 .footer-section ul {
@@ -1102,7 +1109,7 @@ footer {
 
 
 .footer-section ul li a {
-  color: #381f72;
+  color:white;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -1110,6 +1117,12 @@ footer {
 .footer-section ul li a:hover {
   color: #007bff;
 }
+.log h2, h1{
+  color:white;
+ }
+ .footer-section h2{
+  color:white;
+  }
 
 .footer-bottom {
   text-align: center;
@@ -1120,6 +1133,7 @@ footer {
 
 .footer-bottom p {
   margin: 0;
+  color:white;
 }
 
 @media (max-width: 768px) {

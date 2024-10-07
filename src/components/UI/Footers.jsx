@@ -16,7 +16,7 @@ const Footers = () => {
         </div>
         </div>
         </div>
-        <p>Exploring the future with AI and Robotics. Join us for exciting events, projects, and innovations.</p>
+        <p></p>
       </div>    
       <div className="footer-section social">
         <h2>Follow Us</h2>
