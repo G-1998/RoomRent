@@ -56,7 +56,7 @@ const Home = () => {
 
   return (
     <>
-      {/* Background Section with Animated Text and Search Bar */}
+     
       <section ref={sliderRef} className={`background-container ${sliderInView ? 'slide-in' : ''}`}>
         <img src={background} alt="Background" className="background-image" />
         <div className="overlay-content transbox">
@@ -106,20 +106,7 @@ const Home = () => {
 
 
 
-      {/* Slider Section */}
-      <section className={`slider-container ${sliderInView ? 'slide-in' : ''}`}>
-        <Slider {...settings}>
-          <div>
-            <img src={image1} alt="Image 1" />
-          </div>
-          <div>
-            <img src={image2} alt="Image 2" />
-          </div>
-          <div>
-            <img src={image3} alt="Image 3" />
-          </div>
-        </Slider>
-      </section>
+    
 
       {/* Additional Section */}
       <section ref={sectionRef} className={`containersection1 ${sectionInView ? 'slide-in' : ''}`}>
@@ -141,6 +128,21 @@ const Home = () => {
           <img src={room} alt="Living Room" />
           </div>
         </div>
+      </section>
+        {/* Slider Section */}
+        <div className='heading'><h1>Our Sponsership</h1></div>
+        <section className={`slider-container ${sliderInView ? 'slide-in' : ''}`}>
+        <Slider {...settings}>
+          <div>
+            <img src={image1} alt="Image 1" />
+          </div>
+          <div>
+            <img src={image2} alt="Image 2" />
+          </div>
+          <div>
+            <img src={image3} alt="Image 3" />
+          </div>
+        </Slider>
       </section>
     </>
   );
