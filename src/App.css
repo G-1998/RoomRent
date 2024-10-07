@@ -707,6 +707,7 @@ video {
   margin: 0 auto;
   background-color: #8d089b;;
   gap: 30px;
+  border-radius: 10px;
   
   
 }
@@ -715,6 +716,7 @@ video {
   flex: 1;
   align-items: center;
   justify-content: space-between;
+ 
 }
 
 .text h1 {
@@ -723,6 +725,7 @@ video {
   text-align: left;
   margin-bottom: 20px;
   text-transform: capitalize;
+  
 }
 
 .text {
@@ -1059,7 +1062,7 @@ video {
 /* Footer CSS */
 
 footer {
-  background-color: #fff;  
+  background-color: #b2d2f0;  
   padding: 10px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px 0;
