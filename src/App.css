@@ -330,7 +330,7 @@ section video {
 
 @media (max-width: 768px) {
   .slider-image {
-    height: 300px; /* Further reduce height for tablets */
+    height: 200px; /* Further reduce height for tablets */
   }
 
   .slick-prev,
@@ -816,9 +816,24 @@ section video {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .slider-container {
-    padding: 10px; /* Reduce padding on smaller screens */
+    padding: 20px;  
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
   }
-
+  
+  /* Styles for the slider images */
+  .slider-image {
+    width: 100%; /* Responsive image */
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth scale effect on hover */
+  }
+  .slider-container img {
+    width: 100%; /* Responsive image */
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth scale effect on hover */
+  }
   video {
     height: 300px; /* Adjust video height on small screens */
   }
