@@ -28,8 +28,7 @@ const Headers = () => {
           {/* Logo Section */}
           <div className="logo">
             <img src={Logo} alt="Easy Room Finder Logo" className="logo-img" />
-            <div className="logo-text">
-              <h2>Easy</h2>
+            <div className="logo-text">             
               <h1>Room Finder</h1>
             </div>
           </div>

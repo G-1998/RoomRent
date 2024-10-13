@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { useInView } from 'react-intersection-observer';
+import { NavLink } from 'react-router-dom';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -62,7 +63,10 @@ const Home = () => {
         <div className="overlay-content transbox">
           <h1 className="overlay-message animated-text">Welcome to Our Platform</h1>
           <p className="overlay-message typewriter-text">It Will Help You to Find Your Room Easily</p>
-          <p className="overlay-message blinking-text ">Go to Room Section</p>
+          <NavLink to="/RoomSelection">
+
+          <p className="overlay-message blinking-text">GO TO ROOM SECTION</p>
+                </NavLink>
         </div>
       </section>
 

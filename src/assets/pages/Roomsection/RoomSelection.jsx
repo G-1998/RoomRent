@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './Roomsection.css';
+import { NavLink } from 'react-router-dom';
 import Slider from "react-slick"; // Import the Slider
 import singleRoomData from './SingleRoom.json';
 import doubleRoomData from './DoubleRoom.json';
